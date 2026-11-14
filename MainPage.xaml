@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CadastroEventos.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Cadastro de Eventos"
+    BackgroundColor="#F8F5FC">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="14">
+
+            <Label Text="Cadastro de Eventos"
+                   FontSize="27"
+                   FontAttributes="Bold"
+                   TextColor="#6A3FA0"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Preencha os dados do evento"
+                   FontSize="14"
+                   TextColor="#665D70"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Nome do evento"/>
+            <Entry Text="{Binding Nome}"
+                   Placeholder="Digite o nome do evento"
+                   BackgroundColor="White"/>
+
+            <Label Text="Data de início"/>
+            <DatePicker Date="{Binding DataInicio}"
+                        Format="dd/MM/yyyy"
+                        BackgroundColor="White"/>
+
+            <Label Text="Data de término"/>
+            <DatePicker Date="{Binding DataTermino}"
+                        Format="dd/MM/yyyy"
+                        BackgroundColor="White"/>
+
+            <Label Text="Número de participantes"/>
+            <Entry Text="{Binding NumeroParticipantes}"
+                   Keyboard="Numeric"
+                   BackgroundColor="White"/>
+
+            <Label Text="Local do evento"/>
+            <Entry Text="{Binding Local}"
+                   Placeholder="Digite o local"
+                   BackgroundColor="White"/>
+
+            <Label Text="Custo por participante (R$)"/>
+            <Entry Text="{Binding CustoPorParticipante}"
+                   Keyboard="Numeric"
+                   BackgroundColor="White"/>
+
+            <Button Text="Concluir cadastro"
+                    Clicked="OnConcluirCadastro"
+                    BackgroundColor="#6A3FA0"
+                    TextColor="White"
+                    CornerRadius="12"
+                    HeightRequest="52"
+                    Margin="0,15,0,0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
