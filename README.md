@@ -38,6 +38,14 @@ O Cadastro de Eventos é um aplicativo que permite registrar informações bási
 
 As capturas de tela do aplicativo demonstram a tela de cadastro e a tela de resumo do evento.
 
+## Capturas de tela
+
+### Tela de cadastro
+![Tela de cadastro](01-tela-cadastro.png)
+
+### Tela de resumo
+![Tela de resumo](02-tela-resumo.png)
+
 ## Autoria
 
 Projeto acadêmico desenvolvido por Tatiane.
